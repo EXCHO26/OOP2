@@ -56,15 +56,18 @@ void Point::SetY(int y) {
 void Point::Print(std::ostream& os) const {
     // TODO: Implement Print method
 }
-```
 
 double Point::DistanceTo(const Point& other) const {
     // TODO: Implement DistanceTo method
 }
+```
+
 Да се реализира клас `Triangle`, който има член-данни 3 точки.
 Да се напишат:
 - конструктор с параметри;
-- `GetArea` - метод за намиране на лице по Херонова формула.
+- `GetPerimeter` - метод за намиране на периметъра на триъгълника;
+- `GetArea` - метод за намиране на лице по Херонова формула;
+- `Print` - метод за подходящо извеждане на данните на триъгълника по подаден поток.
 
 Да се реализира клас `Quadrilateral`, който описва четириъгълник с член-данни 4 точки.
 Да се напишат: 
@@ -79,3 +82,12 @@ double Point::DistanceTo(const Point& other) const {
 За всички тях да се напишат: 
 - подходящи конструктори;
 - собствени реализации на методите `Print`, `GetArea`, `GetPerimeter`.
+### Схема на йерархията:
+<br>![](https://github.com/xKrashx/Object_Oriented_Programming/blob/main/Practicum/Week%2009/img/Hierarchy.png?raw=true)
+
+<br>***Забележки:*** 
+<br>Да се използват познатите формули за намиране на лице за съответните фигури, а не разделянето на два триъгълника.
+Помислете за лесен начин за намиране на височините на необходимите места, както е показано на примера с трапеца по-долу:
+<br>![](https://github.com/xKrashx/Object_Oriented_Programming/blob/main/Practicum/Week%2009/img/Height.png)
+
+
